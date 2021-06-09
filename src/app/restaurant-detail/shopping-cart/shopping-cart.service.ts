@@ -2,28 +2,28 @@ import { MenuItem } from "../menu-item/menu-item.model"
 import { CartItem } from "./cart-item.model"
 
 export class ShoppingCartService {
-  itens: CartItem[] = []
+  items: CartItem[] = []
 
   clear() {
-    this.itens = []
+    this.items = []
   }
 
   addItem(item: MenuItem) {
-    let foundItem = this.itens.find((mItem) => mItem.menuItem.id === item.id)
+    let foundItem = this.items.find((mItem) => mItem.menuItem.id === item.id)
 
     if (foundItem) {
       foundItem.quantity++
     } else {
-      this.itens.push(new CartItem(item))
+      this.items.push(new CartItem(item))
     }
   }
 
   removeItem(item: CartItem) {
-    this.itens.splice(this.itens.indexOf(item), 1)
+    this.items.splice(this.items.indexOf(item), 1)
   }
 
   total(): number {
-    return this.itens
+    return this.items
       .map(item => item.value())
       .reduce((prev, value) => prev + value, 0)
   }
