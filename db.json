@@ -387,6 +387,19 @@
         }
       ],
       "id": 1
+    },
+    {
+      "adress": "Retornando string",
+      "number": "11",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "straw"
+        }
+      ],
+      "id": 2
     }
   ]
 }
