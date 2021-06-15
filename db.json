@@ -400,6 +400,19 @@
         }
       ],
       "id": 2
+    },
+    {
+      "adress": "Rua dos Coco",
+      "number": "11",
+      "optionalAddress": "",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "chocpop"
+        }
+      ],
+      "id": 3
     }
   ]
 }
